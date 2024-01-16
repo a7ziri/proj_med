@@ -1,7 +1,7 @@
 import argparse
 
 import pandas as pd
-from catboost import CatboostClassifier, Pool
+from catboost import CatBoostClassifier, Pool
 from sklearn.model_selection import train_test_split
 
 
@@ -25,10 +25,11 @@ def train(train_csv_path:str, savepath:str ):
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.22 , random_state=42 ,shuffle=True )
 
 
-    model = CatboostClassifier()
+    model = CatBoostClassifier()
     model.fit(X_train , y_train)
     model.save_model(savepath , format='cbm')
 
 
 if __name__ == '__main__':
     args = configure_parser().parse_args()
+    train(args.train_csv_path, args.savepath)
