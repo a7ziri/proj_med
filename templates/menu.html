@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/css/add.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/css/reset.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Main</title>
+</head>
+
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ваши симптомы</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            {{syptom_list}}
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary">Сохранить изменения</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+<body class="bg-body-tertiary">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            
+        <a class="navbar-brand" href="#">
+            <img src="{{ url_for('static', filename='/img/doctor-svgrepo-com 23.svg') }}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Analyzer Doctor
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Переключить навигацию">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Analyzer Doctor</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+            </div>
+            <div class="offcanvas-body">
+            <div class="d-grid gap-2 d-md-block">
+                <button type="button" class="btn btn-primary col-3 mb-3" data-bs-toggle="button" autocomplete="off" onclick="window.location.href = '{{ url_for('mainpage') }}'">Main</button>
+                <button type="button" class="btn btn-primary col-3 mb-3" data-bs-toggle="button" autocomplete="off" onclick="window.location.href = '{{ url_for('analyse') }}'">Link</button>
+                <button type="button" class="btn btn-primary col-3 mb-3" data-bs-toggle="button" autocomplete="off" onclick="window.location.href = '{{ url_for('analyse') }}'">About</button>
+                <button type="button" class="btn btn-success col-5" data-bs-toggle="button" autocomplete="off" onclick="window.location.href = '{{ url_for('analyse') }}'">Login</button>
+                
+            </div>
+            <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div class="fake"></div>
+    {% block content %}
+
+    {% endblock %}
+
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/add.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='menu.js') }}"></script>
+    
+    
+</html>
