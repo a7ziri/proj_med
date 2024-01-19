@@ -31,7 +31,7 @@
 [![Product Name Screen Shot][product-screenshot]]
 You want to get advice and help quickly , as well as understand which doctor you need to see ? Our product will help you with this
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
@@ -45,7 +45,7 @@ You want to get advice and help quickly , as well as understand which doctor you
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000.svg?logo=flask&logoColor=white)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
@@ -58,7 +58,7 @@ You want to get advice and help quickly , as well as understand which doctor you
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
@@ -72,7 +72,7 @@ You want to get advice and help quickly , as well as understand which doctor you
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
@@ -85,12 +85,11 @@ Contact - [ml engineer](https://t.me/ryoshu1221)
 
 Project Link: [https://github.com/a7ziri/proj_med](https://github.com/a7ziri/proj_med)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
