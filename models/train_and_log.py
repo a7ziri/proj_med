@@ -26,6 +26,7 @@ def train(train_csv_path:str, savepath:str ,wandb_key:str ):
     train_df = pd.read_csv(train_csv_path)
 
     train_df.drop('Unnamed: 0' , axis= 1 ,  inplace = True)
+    train_df.drop('Symptom_17' , axis= 1 ,  inplace = True)
 
 
     X = train_df.iloc[:,1:].values
