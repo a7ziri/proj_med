@@ -3,12 +3,9 @@ import logging
 
 import joblib
 import pandas as pd
-
-log = logging.getLogger(__name__)
 from sklearn import metrics
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-from tqdm.notebook import tqdm
 
 import wandb
 
@@ -38,7 +35,7 @@ def train(train_csv_path:str, savepath:str ,wandb_key:str ):
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.22 , random_state=42 ,shuffle=True )
 
 
-    model = RandomForestClassifier()
+    model = RandomForestClassifier( n_estimators = 300 , max_depth= 9, random_state =42 , verbose = 100)
     model.fit(X_train, y_train)
     model_params = model.get_params()
     preds = model.predict(X_test)
@@ -47,7 +44,6 @@ def train(train_csv_path:str, savepath:str ,wandb_key:str ):
 
     wandb.init(project='123', config=model_params)
     recall = metrics.recall_score(y_test,preds , average='macro')
-    log.info(f'recall: {recall}')
     # Add additional configs to wandb
     wandb.config.update({"test_size" : 0.22,
                         "train_len" : len(X_train),
