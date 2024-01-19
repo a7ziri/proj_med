@@ -1,0 +1,6 @@
+model: RandomForest
+params:
+  n_estimators : 300
+  max_depth: 9
+  random_state : 42
+  verbose: 100
