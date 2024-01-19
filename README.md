@@ -96,4 +96,4 @@ Project Link: [https://github.com/a7ziri/proj_med](https://github.com/a7ziri/pro
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images\3i6des2c9mI.jpg
+[product-screenshot]:images/3i6des2c9mI.jpg
