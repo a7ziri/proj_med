@@ -42,6 +42,7 @@ def my_app(cfg: DictConfig ):
 
     wandb.init(project='123', config=forest_params)
     recall = metrics.recall_score(y_test,preds , average='macro')
+    log.info(f'recall: {recall}')
     # Add additional configs to wandb
     wandb.config.update({"test_size" : 0.22,
                         "train_len" : len(X_train),
