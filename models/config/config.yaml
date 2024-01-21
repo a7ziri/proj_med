@@ -4,3 +4,8 @@ params:
   max_depth: 9
   random_state : 42
   verbose: 100
+data:
+  csv_path: data\all_data_disease.csv
+
+save_path:
+  path_to_model : models/model_forest_test.
