@@ -23,6 +23,17 @@
 
 
 ### About
+The proj_med repository appears to be a data-driven project focused on medical/healthcare analytics or predictive modeling. It likely involves processing medical datasets, training machine learning models, and generating insights for healthcare applications.
+
+Key Components:
+
+Data Preprocessing: Includes scripts for cleaning, transforming, and structuring raw medical data (e.g., CSV files).
+
+Model Development: Contains code for training machine learning models (potentially for tasks like disease prediction or patient risk stratification).
+
+Utilities: Helper functions for tasks like feature engineering, evaluation metrics, or visualization.
+
+Notebooks: Jupyter notebooks for exploratory analysis, hypothesis testing, or result demonstration.
 
 
 
