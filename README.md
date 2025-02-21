@@ -49,8 +49,7 @@
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+
 
 
 
