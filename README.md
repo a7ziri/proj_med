@@ -25,11 +25,7 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]
-You want to get advice and help quickly , as well as understand which doctor you need to see ? Our product will help you with this
 
 
 
