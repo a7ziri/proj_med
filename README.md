@@ -16,10 +16,13 @@
 <br />
 <div align="center">
   <a href="https://github.com/a7ziri/proj_med/main">
-    <img src="images/logo.jpg" alt="Logo" width="200" height="200">
+    <img src="logo.jpg" alt="Logo" width="200" height="200">
   </a>
 
 </div>
+
+
+### About
 
 
 
